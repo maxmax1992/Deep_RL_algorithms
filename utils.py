@@ -1,3 +1,6 @@
+import numpy as np
+import socket
+
 def moving_average(x, N):
     return np.convolve(x, np.ones(N, ), mode='valid') / N
 
